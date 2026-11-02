@@ -203,7 +203,7 @@ Majority baseline & none & 5 & ---\\\bottomrule
 \end{table}
 
 \subsubsection{Code excerpts}
-The full code is in the Git repository (\code{src/analysis.py}). The key leakage-safe components are:
+The full code is in the Git repository at https://github.com/S3ikou/heart-disease-model-comparison (\code{src/analysis.py}). The key leakage-safe components are:
 \begin{lstlisting}[language=Python,caption={Preprocessing pipeline and model grids.},captionpos=b]
 def make_prep():
     return ColumnTransformer([
@@ -407,6 +407,6 @@ World Health Organization. (2025). \emph{Cardiovascular diseases (CVDs)}. https:
 %================ APPENDIX ================
 \appendix
 \section{Reproducibility and Code Repository}
-The Git repository contains: \code{data/heart.csv}; \code{src/analysis.py} (complete pipeline, tuning, nested CV, tests, figures); \code{results/} (\code{results.json}, \code{test\_metrics.csv}, \code{nested\_cv.csv}, \code{tree\_rules.txt}); \code{figures/}; \code{paper/main.tex}; \code{requirements.txt}; and a \code{README.md}. Run \code{pip install -r requirements.txt} then \code{python src/analysis.py}. A global seed of 42 fixes the split, fold assignment and tree construction; scikit-learn 1.8.0 was used.
+The Git repository https://github.com/S3ikou/heart-disease-model-comparison contains: \code{data/heart.csv}; \code{src/analysis.py} (complete pipeline, tuning, nested CV, tests, figures); \code{results/} (\code{results.json}, \code{test\_metrics.csv}, \code{nested\_cv.csv}, \code{tree\_rules.txt}); \code{figures/}; \code{paper/main.tex}; \code{requirements.txt}; and a \code{README.md}. Run \code{pip install -r requirements.txt} then \code{python src/analysis.py}. A global seed of 42 fixes the split, fold assignment and tree construction; scikit-learn 1.8.0 was used.
 
 \end{document}
