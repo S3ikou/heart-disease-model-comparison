@@ -1,4 +1,4 @@
-# Model Comparison for Heart Disease Prediction
+  # Model Comparison for Heart Disease Prediction
 
 MCS 306: Introduction to AI, Bulacan State University.
 
@@ -24,7 +24,11 @@ Heart Failure Prediction Dataset by Fedesoriano (2021), from Kaggle:
 https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction
 
 ## Authors
-Bon Federique B. Avendano, Leonicos Chael C. De Robles, Clarence Wayne B. Ignacio, Jerol Liuz V. Manlapig, Brylle James G. Robles
+Bon Federique B. Avendano, 
+Leonicos Chael C. De Robles, 
+Mark Angelo Del Rosario, 
+Jerol Liuz V. Manlapig, 
+Brylle James G. Robles
 
 ## License
 Code and paper are released under the MIT License. The dataset belongs to its original source.
