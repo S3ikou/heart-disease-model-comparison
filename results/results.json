@@ -1,0 +1,553 @@
+{
+  "info": {
+    "n": 918,
+    "n_train": 688,
+    "n_test": 230,
+    "pos_rate_all": 0.5533769063180828,
+    "pos_rate_train": 0.5537790697674418,
+    "pos_rate_test": 0.5521739130434783,
+    "n_pos_test": 127,
+    "n_neg_test": 103,
+    "chol_zero": 172,
+    "bp_zero": 1,
+    "chol_missing_pos_rate": 0.8837209302325582,
+    "chol_observed_pos_rate": 0.4772117962466488
+  },
+  "nested_cv": {
+    "Majority baseline": {
+      "accuracy": [
+        0.5537818681899926,
+        0.0030860849749291086
+      ],
+      "precision": [
+        0.5537818681899926,
+        0.0030860849749291086
+      ],
+      "recall": [
+        1.0,
+        0.0
+      ],
+      "specificity": [
+        0.0,
+        0.0
+      ],
+      "f1": [
+        0.71281397287587,
+        0.0025558026538913636
+      ],
+      "roc_auc": [
+        0.5,
+        0.0
+      ]
+    },
+    "Logistic regression": {
+      "accuracy": [
+        0.8503120702422511,
+        0.01570190608669272
+      ],
+      "precision": [
+        0.8585300834537455,
+        0.03281111804731664
+      ],
+      "recall": [
+        0.876555023923445,
+        0.049949323005494456
+      ],
+      "specificity": [
+        0.8173982020095188,
+        0.053803318804080326
+      ],
+      "f1": [
+        0.8660253711651235,
+        0.01722973056972689
+      ],
+      "roc_auc": [
+        0.9184419632803948,
+        0.015675828475429872
+      ]
+    },
+    "Decision tree": {
+      "accuracy": [
+        0.8343065693430656,
+        0.002904461407862105
+      ],
+      "precision": [
+        0.831222367061074,
+        0.025912282195559674
+      ],
+      "recall": [
+        0.8819207108680793,
+        0.04351751284286579
+      ],
+      "specificity": [
+        0.7750396615547329,
+        0.050303125106182844
+      ],
+      "f1": [
+        0.8547172164230638,
+        0.007925791643268227
+      ],
+      "roc_auc": [
+        0.9036563679160885,
+        0.01492636799995186
+      ]
+    },
+    "KNN": {
+      "accuracy": [
+        0.8474240981698932,
+        0.020154470422282682
+      ],
+      "precision": [
+        0.8473563903796464,
+        0.017907312543400746
+      ],
+      "recall": [
+        0.8843814080656186,
+        0.048922284064631096
+      ],
+      "specificity": [
+        0.8012162876784771,
+        0.03401061507668551
+      ],
+      "f1": [
+        0.8647092295865301,
+        0.02202232569957756
+      ],
+      "roc_auc": [
+        0.9124794598510121,
+        0.012251861356971655
+      ]
+    }
+  },
+  "best_params": {
+    "Majority baseline": {},
+    "Logistic regression": {
+      "model__C": 1.0
+    },
+    "Decision tree": {
+      "model__max_depth": 5,
+      "model__min_samples_leaf": 20
+    },
+    "KNN": {
+      "model__n_neighbors": 21
+    }
+  },
+  "tuning": {
+    "Logistic regression": {
+      "best_cv_auc": 0.9184100460757201,
+      "best_params": {
+        "model__C": 1.0
+      }
+    },
+    "Decision tree": {
+      "best_cv_auc": 0.9065042283970588,
+      "best_params": {
+        "model__max_depth": 5,
+        "model__min_samples_leaf": 20
+      }
+    },
+    "KNN": {
+      "best_cv_auc": 0.9098071575506239,
+      "best_params": {
+        "model__n_neighbors": 21
+      }
+    }
+  },
+  "test": {
+    "Majority baseline": {
+      "accuracy": 0.5522,
+      "precision": 0.5522,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "f1": 0.7115,
+      "balanced_acc": 0.5,
+      "mcc": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.5522,
+      "TN": 0.0,
+      "FP": 103.0,
+      "FN": 0.0,
+      "TP": 127.0
+    },
+    "Logistic regression": {
+      "accuracy": 0.887,
+      "precision": 0.8915,
+      "recall": 0.9055,
+      "specificity": 0.8641,
+      "f1": 0.8984,
+      "balanced_acc": 0.8848,
+      "mcc": 0.7711,
+      "roc_auc": 0.9334,
+      "pr_auc": 0.9445,
+      "TN": 89.0,
+      "FP": 14.0,
+      "FN": 12.0,
+      "TP": 115.0
+    },
+    "Decision tree": {
+      "accuracy": 0.8435,
+      "precision": 0.876,
+      "recall": 0.8346,
+      "specificity": 0.8544,
+      "f1": 0.8548,
+      "balanced_acc": 0.8445,
+      "mcc": 0.6862,
+      "roc_auc": 0.908,
+      "pr_auc": 0.8944,
+      "TN": 88.0,
+      "FP": 15.0,
+      "FN": 21.0,
+      "TP": 106.0
+    },
+    "KNN": {
+      "accuracy": 0.8826,
+      "precision": 0.9098,
+      "recall": 0.874,
+      "specificity": 0.8932,
+      "f1": 0.8916,
+      "balanced_acc": 0.8836,
+      "mcc": 0.7644,
+      "roc_auc": 0.9386,
+      "pr_auc": 0.9341,
+      "TN": 92.0,
+      "FP": 11.0,
+      "FN": 16.0,
+      "TP": 111.0
+    }
+  },
+  "ci": {
+    "Majority baseline": {
+      "accuracy": [
+        0.48695652173913045,
+        0.6173913043478261
+      ],
+      "recall": [
+        1.0,
+        1.0
+      ],
+      "specificity": [
+        0.0,
+        0.0
+      ],
+      "f1": [
+        0.6549707602339181,
+        0.7634408602150538
+      ],
+      "roc_auc": [
+        0.5,
+        0.5
+      ]
+    },
+    "Logistic regression": {
+      "accuracy": [
+        0.8434782608695652,
+        0.9260869565217391
+      ],
+      "recall": [
+        0.8499801587301588,
+        0.9548872180451128
+      ],
+      "specificity": [
+        0.7961060653512892,
+        0.9313836898395722
+      ],
+      "f1": [
+        0.8549587540014775,
+        0.9368029739776952
+      ],
+      "roc_auc": [
+        0.9002675529973538,
+        0.9639504777009238
+      ]
+    },
+    "Decision tree": {
+      "accuracy": [
+        0.7956521739130434,
+        0.8869565217391304
+      ],
+      "recall": [
+        0.766658878504673,
+        0.8974609374999999
+      ],
+      "specificity": [
+        0.785695084485407,
+        0.9187046802900461
+      ],
+      "f1": [
+        0.8034188034188035,
+        0.8985565921492694
+      ],
+      "roc_auc": [
+        0.8660553354978355,
+        0.945813689653849
+      ]
+    },
+    "KNN": {
+      "accuracy": [
+        0.8391304347826087,
+        0.9217391304347826
+      ],
+      "recall": [
+        0.8119535519125683,
+        0.9285714285714286
+      ],
+      "specificity": [
+        0.8288288288288288,
+        0.9519230769230769
+      ],
+      "f1": [
+        0.8461462450592885,
+        0.929139712554518
+      ],
+      "roc_auc": [
+        0.9027724941327883,
+        0.9675952866867171
+      ]
+    }
+  },
+  "mcnemar": {
+    "Majority baseline vs Logistic regression": {
+      "only_second_correct": 89,
+      "only_first_correct": 12,
+      "p": 1.0827214347884686e-15
+    },
+    "Majority baseline vs Decision tree": {
+      "only_second_correct": 88,
+      "only_first_correct": 21,
+      "p": 6.112691638091425e-11
+    },
+    "Majority baseline vs KNN": {
+      "only_second_correct": 92,
+      "only_first_correct": 16,
+      "p": 3.777381890593871e-14
+    },
+    "Logistic regression vs Decision tree": {
+      "only_second_correct": 7,
+      "only_first_correct": 17,
+      "p": 0.06391465663909912
+    },
+    "Logistic regression vs KNN": {
+      "only_second_correct": 7,
+      "only_first_correct": 8,
+      "p": 1.0
+    },
+    "Decision tree vs KNN": {
+      "only_second_correct": 15,
+      "only_first_correct": 6,
+      "p": 0.0783538818359375
+    }
+  },
+  "auc_diff": {
+    "Logistic regression - Decision tree": {
+      "mean": 0.025021182417317666,
+      "ci": [
+        0.0035079621933434947,
+        0.04777631472095012
+      ]
+    },
+    "Logistic regression - KNN": {
+      "mean": -0.0051751286282590726,
+      "ci": [
+        -0.026189545684855545,
+        0.01573552014787442
+      ]
+    },
+    "KNN - Decision tree": {
+      "mean": 0.030734594000008976,
+      "ci": [
+        0.009366379042288476,
+        0.05341314460393409
+      ]
+    }
+  },
+  "cost": {
+    "Logistic regression": {
+      "0.50": {
+        "t": 0.5,
+        "FN": 12,
+        "FP": 14,
+        "cost": 74,
+        "recall": 0.905511811023622,
+        "specificity": 0.8640776699029126
+      },
+      "tuned": {
+        "t": 0.22,
+        "FN": 7,
+        "FP": 32,
+        "cost": 67,
+        "recall": 0.9448818897637795,
+        "specificity": 0.6893203883495146
+      }
+    },
+    "Decision tree": {
+      "0.50": {
+        "t": 0.5,
+        "FN": 21,
+        "FP": 15,
+        "cost": 120,
+        "recall": 0.8346456692913385,
+        "specificity": 0.8543689320388349
+      },
+      "tuned": {
+        "t": 0.22,
+        "FN": 7,
+        "FP": 34,
+        "cost": 69,
+        "recall": 0.9448818897637795,
+        "specificity": 0.6699029126213593
+      }
+    },
+    "KNN": {
+      "0.50": {
+        "t": 0.5,
+        "FN": 16,
+        "FP": 11,
+        "cost": 91,
+        "recall": 0.8740157480314961,
+        "specificity": 0.8932038834951457
+      },
+      "tuned": {
+        "t": 0.32,
+        "FN": 5,
+        "FP": 29,
+        "cost": 54,
+        "recall": 0.9606299212598425,
+        "specificity": 0.7184466019417476
+      }
+    },
+    "Majority baseline": {
+      "0.50": {
+        "FN": 0,
+        "FP": 103,
+        "cost": 103
+      }
+    }
+  },
+  "thresholds": {
+    "Logistic regression": 0.22,
+    "Decision tree": 0.22,
+    "KNN": 0.32
+  },
+  "ablation": {
+    "Logistic regression": {
+      "with_indicator": 0.9280694103413912,
+      "without": 0.9184419632803948
+    },
+    "Decision tree": {
+      "with_indicator": 0.9000534287861377,
+      "without": 0.9036563679160885
+    },
+    "KNN": {
+      "with_indicator": 0.9182036415253314,
+      "without": 0.9124794598510121
+    }
+  },
+  "timing_ms": {
+    "Majority baseline": {
+      "grid_search_s": 0.009015312000002496,
+      "fit_ms": 9.208419149999258,
+      "predict_ms": 6.408424199999274
+    },
+    "Logistic regression": {
+      "grid_search_s": 1.201103138999997,
+      "fit_ms": 16.30205069999988,
+      "predict_ms": 6.222753850001084
+    },
+    "Decision tree": {
+      "grid_search_s": 4.637727977999987,
+      "fit_ms": 11.271094299999618,
+      "predict_ms": 4.751655600000504
+    },
+    "KNN": {
+      "grid_search_s": 1.6626416860000006,
+      "fit_ms": 9.37257995000067,
+      "predict_ms": 7.348073100000363
+    }
+  },
+  "lr_coef": {
+    "ST_Slope_Up": -1.224,
+    "ChestPainType_NAP": -0.468,
+    "ChestPainType_ATA": -0.42,
+    "ChestPainType_TA": -0.416,
+    "MaxHR": -0.29,
+    "RestingECG_Normal": -0.075,
+    "RestingECG_ST": -0.055,
+    "RestingBP": -0.054,
+    "Cholesterol": 0.05,
+    "Age": 0.123,
+    "RestingECG_LVH": 0.125,
+    "ST_Slope_Down": 0.201,
+    "Oldpeak": 0.245,
+    "ExerciseAngina_Y": 0.775,
+    "ST_Slope_Flat": 1.017,
+    "FastingBS_1": 1.246,
+    "Sex_M": 1.265,
+    "ChestPainType_ASY": 1.299
+  },
+  "tree_importance": {
+    "ST_Slope_Up": 0.68,
+    "ChestPainType_ASY": 0.162,
+    "MaxHR": 0.065,
+    "Oldpeak": 0.046,
+    "Sex_M": 0.019,
+    "Age": 0.012,
+    "Cholesterol": 0.009,
+    "ExerciseAngina_Y": 0.006
+  },
+  "tree_depth": 5,
+  "tree_leaves": 16,
+  "grids": {
+    "C": [
+      0.001,
+      0.0031622776601683794,
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0,
+      3.1622776601683795,
+      10.0,
+      31.622776601683793,
+      100.0
+    ],
+    "depth": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "leaf": [
+      1,
+      5,
+      10,
+      20
+    ],
+    "k": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31
+    ]
+  },
+  "costs": {
+    "C_FN": 5,
+    "C_FP": 1
+  }
+}

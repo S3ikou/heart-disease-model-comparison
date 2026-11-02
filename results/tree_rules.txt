@@ -1,0 +1,46 @@
+|--- ST_Slope_Up <= 0.50
+|   |--- ChestPainType_ASY <= 0.50
+|   |   |--- MaxHR <= 0.01
+|   |   |   |--- ExerciseAngina_Y <= 0.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- ExerciseAngina_Y >  0.50
+|   |   |   |   |--- class: 1
+|   |   |--- MaxHR >  0.01
+|   |   |   |--- Cholesterol <= 0.04
+|   |   |   |   |--- class: 0
+|   |   |   |--- Cholesterol >  0.04
+|   |   |   |   |--- class: 1
+|   |--- ChestPainType_ASY >  0.50
+|   |   |--- Sex_M <= 0.50
+|   |   |   |--- MaxHR <= -0.07
+|   |   |   |   |--- class: 1
+|   |   |   |--- MaxHR >  -0.07
+|   |   |   |   |--- class: 1
+|   |   |--- Sex_M >  0.50
+|   |   |   |--- MaxHR <= 0.43
+|   |   |   |   |--- Cholesterol <= 0.28
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Cholesterol >  0.28
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- MaxHR >  0.43
+|   |   |   |   |--- class: 1
+|--- ST_Slope_Up >  0.50
+|   |--- ChestPainType_ASY <= 0.50
+|   |   |--- Age <= 0.27
+|   |   |   |--- Oldpeak <= -0.58
+|   |   |   |   |--- class: 0
+|   |   |   |--- Oldpeak >  -0.58
+|   |   |   |   |--- class: 0
+|   |   |--- Age >  0.27
+|   |   |   |--- Age <= 0.80
+|   |   |   |   |--- class: 0
+|   |   |   |--- Age >  0.80
+|   |   |   |   |--- class: 0
+|   |--- ChestPainType_ASY >  0.50
+|   |   |--- Oldpeak <= -0.40
+|   |   |   |--- MaxHR <= 0.59
+|   |   |   |   |--- class: 0
+|   |   |   |--- MaxHR >  0.59
+|   |   |   |   |--- class: 0
+|   |   |--- Oldpeak >  -0.40
+|   |   |   |--- class: 1
